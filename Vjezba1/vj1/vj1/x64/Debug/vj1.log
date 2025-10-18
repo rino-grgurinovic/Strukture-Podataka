@@ -1,0 +1,3 @@
+﻿  vj1.c
+C:\Users\Rino\Desktop\Strukture Podataka\Vjezba1\vj1\vj1.c(72,66): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  vj1.vcxproj -> C:\Users\Rino\Desktop\Strukture Podataka\Vjezba1\vj1\x64\Debug\vj1.exe

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Vjezba1\\vj1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF76E4C-E00E-44EC-9864-E0A56FCCCDCD}|vj1.vcxproj|C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Vjezba1\\vj1\\vj1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6DF76E4C-E00E-44EC-9864-E0A56FCCCDCD}|vj1.vcxproj|solutionrelative:vj1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vj1.c",
+              "DocumentMoniker": "C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Vjezba1\\vj1\\vj1.c",
+              "RelativeDocumentMoniker": "vj1.c",
+              "ToolTip": "C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Vjezba1\\vj1\\vj1.c",
+              "RelativeToolTip": "vj1.c",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-18T14:38:44.337Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
