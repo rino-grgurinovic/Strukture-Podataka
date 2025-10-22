@@ -13,6 +13,7 @@ U zadatku se ne smiju koristiti globalne varijable.
 #include <stdlib.h>
 #include <string.h>
 
+//Struktura osobe
 typedef struct Person* Position;
 typedef struct Person {
 	char firstName[20];
@@ -21,6 +22,7 @@ typedef struct Person {
 	Position next;
 } Person;
 
+//Funkcije
 Position CreatePerson();
 Position AddToBeginning(Position);
 int PrintList(Position);
@@ -29,7 +31,7 @@ Position FindByLastName(Position);
 Position DeleteFromList(Position);
 
 int main() {
-	Position head = NULL;
+	Position head = NULL; //Pokazivac na pocetak liste
 	do {
 		int choice = 0;
 		printf("\nIzbornik:\n");
@@ -64,6 +66,7 @@ int main() {
 	return 0;
 }
 
+//Funkcija za stvaranje nove osobe
 Position CreatePerson() {
 	Position newPerson = (Position)malloc(sizeof(Person));
 	if (newPerson == NULL) {
@@ -76,20 +79,22 @@ Position CreatePerson() {
 	scanf("%s", newPerson->lastName);
 	printf("Unesite godinu rodenja: ");
 	scanf(" %d", &newPerson->birthYear);
-	newPerson->next = NULL;
+	newPerson->next = NULL; //Inicijalizacija pokazivaca na sljedeci element
 	return newPerson;
 }
 
+//Funkcija za dodavanje osobe na pocetak liste
 Position AddToBeginning(Position head) {
 	Position newPerson = CreatePerson();
 	if (newPerson == NULL) {
 		printf("Greska pri kreiranju nove osobe!\n");
 		return head;
 	}
-	newPerson->next = head;
+	newPerson->next = head; //Novi element pokazuje na trenutni pocetak liste
 	return newPerson;
 }
 
+//Funkcija za ispis liste
 int PrintList(Position head) {
 	if (head == NULL) {
 		printf("Greska! Nema ljudi za ispisati!\n");
@@ -105,6 +110,7 @@ int PrintList(Position head) {
 	return 0;
 }
 
+//Funkcija za dodavanje osobe na kraj liste
 Position AddToEnd(Position head) {
 	Position newPerson = CreatePerson();
 	if (newPerson == NULL) {
@@ -115,20 +121,21 @@ Position AddToEnd(Position head) {
 		return newPerson;
 	}
 	Position temp = head;
-	while (temp->next != NULL) {
+	while (temp->next != NULL) { //Pronalazi kraj liste
 		temp = temp->next;
 	}
-	temp->next = newPerson;
+	temp->next = newPerson; //Novi element dodaje se na kraj liste
 	return head;
 }
 
+//Funkcija za pronalazenje osobe po prezimenu
 Position FindByLastName(Position head) {
 	char lastName[30];
 	printf("Unesite prezime osobe koju trazite: ");
 	scanf("%s", lastName);
 	Position current = head;
 	while (current != NULL) {
-		if (strcmp(current->lastName, lastName) == 0) {
+		if (strcmp(current->lastName, lastName) == 0) { //Usporedba prezimena
 			printf("Osoba pronadena: %s %s, godina rodenja: %d\n", current->firstName, current->lastName, current->birthYear);
 			return current;
 		}
@@ -138,6 +145,7 @@ Position FindByLastName(Position head) {
 	return NULL;
 }
 
+//Funkcija za brisanje osobe iz liste
 Position DeleteFromList(Position head) {
 	if (head == NULL) {
 		printf("Greska! Nema upisanih ljudi!\n");
@@ -148,7 +156,7 @@ Position DeleteFromList(Position head) {
 	scanf("%s", lastName);
 	Position current = head;
 	Position previous = NULL;
-	while (current != NULL && strcmp(current->lastName, lastName) != 0) {
+	while (current != NULL && strcmp(current->lastName, lastName) != 0) { //Trazenje osobe
 		previous = current;
 		current = current->next;
 	}
@@ -156,10 +164,10 @@ Position DeleteFromList(Position head) {
 		printf("Osoba s prezimenom %s nije pronadena.\n", lastName);
 		return head;
 	}
-	if (previous == NULL) {
+	if (previous == NULL) { //Brisanje prvog elementa
 		head = current->next;
 	} else {
-		previous->next = current->next;
+		previous->next = current->next; //Preskakanje trenutnog elementa
 	}
 	free(current);
 	printf("Osoba s prezimenom %s je izbrisana iz liste.\n", lastName);
