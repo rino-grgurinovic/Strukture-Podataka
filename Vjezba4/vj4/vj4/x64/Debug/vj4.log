@@ -1,0 +1,3 @@
+﻿  vj4.c
+C:\Users\Rino\Desktop\Strukture Podataka\Vjezba4\vj4\vj4.c(56,3): warning C4047: 'return': 'Position' differs in levels of indirection from 'int'
+  vj4.vcxproj -> C:\Users\Rino\Desktop\Strukture Podataka\Vjezba4\vj4\x64\Debug\vj4.exe
