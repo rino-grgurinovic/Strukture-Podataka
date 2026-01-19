@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Seminar\\seminar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FDDAF9B-05E3-4A44-9BF2-A00DF5A84FEE}|seminar.vcxproj|C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Seminar\\seminar\\seminar.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9FDDAF9B-05E3-4A44-9BF2-A00DF5A84FEE}|seminar.vcxproj|solutionrelative:seminar.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "seminar.c",
+              "DocumentMoniker": "C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Seminar\\seminar\\seminar.c",
+              "RelativeDocumentMoniker": "seminar.c",
+              "ToolTip": "C:\\Users\\Rino\\Desktop\\Strukture Podataka\\Seminar\\seminar\\seminar.c",
+              "RelativeToolTip": "seminar.c",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAE0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-13T19:51:31.501Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
