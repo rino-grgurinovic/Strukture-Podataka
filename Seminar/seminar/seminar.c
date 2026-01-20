@@ -335,6 +335,9 @@ int EncounterRoom(PlayerPtr player, MonsterPtr monster) {
 		else if (choice == 2) {
 			if (player->items != NULL) {
 				player->health += 0.2 * player->maxHealth;
+				if (player->health > player->maxHealth) {
+					player->health = player->maxHealth;
+				}
 				TreasurePtr temp = player->items;
 				player->items = player->items->next;
 				free(temp);
@@ -377,6 +380,9 @@ int TreasureRoom(PlayerPtr player) {
 	else if (rand() % 2) {
 		printf("Nasao si EXPERIENCE ORB koji ti daje 30 expiriencea\n");
 		player->experience += 30;
+		if (player->experience >= 100) {
+			LevelUpPlayer(player);
+		}
 	}
 	else {
 		if (rand() % 4) {

@@ -1,6 +1,5 @@
 ﻿  seminar.c
-C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(53,2): warning C4013: 'ChooseClass' undefined; assuming extern returning int
-C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(216,7): warning C4013: 'LevelUpPlayer' undefined; assuming extern returning int
-C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(231,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(261,10): warning C4476: 'printf' : unknown type field character 'v' in format specifier
+C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(322,7): warning C4013: 'LevelUpPlayer' undefined; assuming extern returning int
+C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(337,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\seminar.c(372,10): warning C4476: 'printf' : unknown type field character 'v' in format specifier
   seminar.vcxproj -> C:\Users\Rino\Desktop\Strukture Podataka\Seminar\seminar\x64\Debug\seminar.exe
